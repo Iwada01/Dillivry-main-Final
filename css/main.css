@@ -1,0 +1,326 @@
+/* Gobal Rules */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+button,
+img {
+  user-select: none;
+}
+img {
+  max-width: 100%;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+/* ----------------------------------------------------------------- */
+
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+/* Header */
+header {
+  padding: 25px 50px;
+  font-size: 50px;
+}
+header a.logo {
+  color: #4bc74b;
+}
+/* Mobile Screen*/
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+    font-size: 30px;
+    padding: 25px 0px;
+  }
+}
+
+/* Main */
+main {
+  padding: 0 50px;
+  overflow: hidden;
+}
+/* First Section */
+main #sec-1 {
+  display: flex;
+  column-gap: 20px;
+}
+main #sec-1 > div {
+  flex-basis: 45%;
+}
+main #sec-1 > div img {
+  width: 420px;
+  height: 370px;
+  margin-left: 50px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main #sec-1 > div img {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 992px) {
+  main #sec-1 > div {
+    flex-basis: 100%;
+  }
+  main #sec-1 > div img {
+    width: 100%;
+    height: 400px;
+    margin-left: 0px;
+    transform: scaleX(1.5);
+  }
+}
+@media (max-width: 600px) {
+  main #sec-1 > div img {
+    height: 250px;
+    max-width: initial;
+  }
+}
+main #sec-1 > div h2 {
+  font-size: 56px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+main #sec-1 > div p {
+  font-size: 28px;
+  line-height: 1.3;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main #sec-1 > div h2 {
+    font-size: 45px;
+  }
+  main #sec-1 > div p {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  main #sec-1 > div h2 {
+    font-size: 25px;
+  }
+  main #sec-1 > div h2,
+  main #sec-1 > div p {
+    text-align: center;
+  }
+  main #sec-1 > div br,
+  main #sec-1 > p br {
+    display: none;
+  }
+  main #sec-1 > div p {
+    font-size: 20px;
+  }
+}
+main #sec-1 > figure {
+  flex-basis: 55%;
+  height: 800px;
+}
+main #sec-1 > figure img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  main #sec-1 > figure {
+    display: none;
+  }
+}
+/* ------------------------------------------------------------------ */
+
+/* Second Section */
+main #sec-2 {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+main #sec-2 > h2 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+@media (max-width: 767px) {
+  main #sec-2 > h2 {
+    font-size: 22px;
+  }
+}
+main #sec-2 > ul {
+  margin-left: 45px;
+}
+main #sec-2 > ul li {
+  padding: 5px 0;
+  font-size: 28px;
+}
+@media (max-width: 767px) {
+  main #sec-2 > ul {
+    margin-left: 30px;
+  }
+  main #sec-2 > ul li {
+    font-size: 20px;
+  }
+}
+main #sec-2 > p {
+  text-align: center;
+  font-size: 40px;
+  margin: 35px 0 50px;
+}
+main #sec-2 > p br {
+  display: none;
+}
+@media (max-width: 767px) {
+  main #sec-2 > p {
+    font-size: 35px;
+    line-height: 1.6;
+    margin: 35px 0;
+  }
+  main #sec-2 > p span {
+    display: none;
+  }
+  main #sec-2 > p br {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  main #sec-2 > p {
+    font-size: 30px;
+  }
+}
+main #sec-2 .download-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  main #sec-2 .download-app {
+    flex-direction: column;
+  }
+}
+main #sec-2 .download-app > figure {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 6px solid black;
+  width: 160px;
+  height: 160px;
+  /* margin-right: 280px; */
+}
+main #sec-2 .download-app > figure img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  main #sec-2 .download-app > figure {
+    margin: auto;
+  }
+}
+/* @media (min-width: 768px) {
+  main #sec-2 .download-app > figure {
+    margin-right: 20px;
+  }
+} */
+@media (min-width: 768px) {
+  main #sec-2 .download-app > div {
+    position: absolute;
+    left: 480px;
+  }
+}
+@media (max-width: 991px) {
+  main #sec-2 .download-app > div {
+    left: 250px;
+  }
+}
+main #sec-2 .download-app > div > p {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  main #sec-2 .download-app > div > p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+main #sec-2 .download-app > div .store {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+@media (max-width: 767px) {
+  main #sec-2 .download-app > div .store {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
+main #sec-2 .download-app > div .store .btn {
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  color: #fff;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+main #sec-2 .download-app > div .store .btn:hover {
+  opacity: 0.9;
+}
+main #sec-2 .download-app > div .store > .btn i {
+  font-size: 34px;
+  color: #4bc74b;
+}
+main #sec-2 .download-app > div .store > .btn p {
+  font-size: 14px;
+}
+main #sec-2 .download-app > div .store > .btn p span {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* ------------------------------------------------------------------ */
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  footer {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+footer .tel i,
+footer .email i {
+  color: #fff;
+  font-size: 22px;
+}
+footer .tel span,
+footer .email span {
+  color: #4bc74b;
+}
+footer .socials {
+  display: flex;
+}
+footer .socials p {
+  color: #4bc74b;
+  margin-right: 10px;
+}
+footer .socials ul {
+  display: flex;
+  list-style: none;
+  column-gap: 15px;
+}
+footer .socials ul img {
+  width: 25px;
+  height: 25px;
+}
